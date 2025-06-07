@@ -1623,7 +1623,7 @@ window.exportFLP = (function() {
                 const buf = resp.arrayBuffer();
                 zip.file(`${inst}.sf3`, buf);
             } else {
-                const resp = await fetch(`/app/instruments/${inst}.ogg`);
+                const resp = await fetch(`/app/instruments/original/${inst}.ogg`);
                 const buf = resp.arrayBuffer();
                 zip.file(`${inst}.ogg`, buf);
             }
