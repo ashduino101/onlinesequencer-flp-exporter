@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         FLP Exporter for Online Sequencer
 // @namespace    http://tampermonkey.net/
-// @version      2025-02-21
+// @version      2024-05-27
 // @description  Export Online Sequencer sequences as FLP projects
 // @author       ashduino101
-// @match        *://onlinesequencer.net/*
+// @match        *://*.onlinesequencer.net/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
 // ==/UserScript==
@@ -1221,7 +1221,7 @@ window.exportFLP = (function() {
                         this.add(
                             218,
                             this.createEnvelope(
-                                true, 0, 100, 65536, 400, 0, 100,
+                                true, 0, 100, 65536, 100, 128, 8192,
                                 0, // not necessary for volume envelopes
                                 true));
                     }
